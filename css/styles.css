@@ -159,11 +159,12 @@ ul{
 }
 
 .header-icon{
+    margin-right: 10px;
     fill:var(--svg-header-color);
 }
 
-.header-icon:hover,
-.header-icon:focus{
+.header-address-link:hover .header-icon,
+.header-address-link:focus .header-icon{
     fill: var(----svg-header-focus-color);
 }
 
@@ -173,6 +174,10 @@ ul{
 }
 
 .header-address-link{
+    display: flex;
+    align-items: center;
+
+
     font-weight: 500;
     letter-spacing: 0.02em;
 
@@ -180,8 +185,8 @@ ul{
     color: inherit;
 }
 
-.header-address-link:hover,
-.header-address-link:focus{
+.header-address-link:hover ,
+.header-address-link:focus {
     color: var(--focus-color);
 }
 
@@ -195,7 +200,7 @@ ul{
 }
 
 .hero.section {
-    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(/images/portfolio/hero/mainpicture.jpg);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/portfolio/hero/mainpicture.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -392,8 +397,8 @@ ul{
     fill: #AFB1B8;
 }
 
-.team-svg-img:hover,
-.team-svg-im:focus{
+.team-svg-link:hover .team-svg-img,
+.team-svg-link:focus .team-svg-img{
     fill: var(--white-color);
 }
 
@@ -449,10 +454,12 @@ ul{
     fill:#AFB1B8;
 }
 
-.customers-img:focus,
-.customers-img:hover{
+
+.customers-link:hover .customers-img,
+.customers-link:focus .customers-img{
     fill: var(--focus-color);
 }
+
 
 .customers-link{
     display: flex;
@@ -462,7 +469,6 @@ ul{
     width: 170px;
     height: 92px;
 
-    background-color: #F5F5F5;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -487,9 +493,20 @@ ul{
     background-color: var(--footer-background-color);
 }
 
+.footer-container{
+    display: flex;
+    align-items:baseline;
+}
+
+.footer-logo-address-container{
+    margin-right: 70px;
+}
+
+
 .footer-logo{
+    display: flex;
+
     margin-bottom: 20px;
-    display: block;
 
 
     font-family: 'Raleway',sans-serif;
@@ -501,7 +518,7 @@ ul{
     
     color: var(--logo-footer-second-part-text-color);
 }
-
+ 
 
 .footer-item:not(:last-child){
     margin-bottom: 9px;
@@ -538,7 +555,61 @@ ul{
 }
 
 
-.follow-container {
+.follow-name{
+    display: flex;
+    margin-bottom: 20px;
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+     
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.address{
+    width: 231px;
+}
+
+.follow-list{
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.follow-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.follow-link:hover,
+.follow-link:focus{
+    background-color: var(--focus-color);
+}
+
+.follow-img{
+    display:flex;
+
+    width: 20px;
+    height: 20px;
+
+    fill: var(--white-color);
+}
+
+
+/*.follow-container {
     display: block;
 
 }
@@ -569,6 +640,12 @@ ul{
     fill: var(--white-color);
 }
 
+.follow-link:hover .follow-img,
+.follow-link:focus .follow-img {
+    fill: var(--white-color);
+}
+
+
 .follow-link {
     display: flex;
     justify-content: center;
@@ -593,7 +670,8 @@ ul{
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-}
+}*/
+
 
 /*=====ПОРТФОЛІО====*/
 .buttons{
